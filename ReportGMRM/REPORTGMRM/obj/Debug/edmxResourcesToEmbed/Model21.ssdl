@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DemoDWGMRM2017Model1.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <Function Name="GetReportVenta" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="descrip" Type="nvarchar" Mode="In" />
+    <Parameter Name="cliente" Type="nvarchar" Mode="In" />
+    <Parameter Name="mes" Type="nvarchar" Mode="In" />
+  </Function>
+  <EntityContainer Name="DemoDWGMRM2017Model1StoreContainer" />
+</Schema>

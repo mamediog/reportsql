@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DemoDWGMRM2017Model1StoreContainer" CdmEntityContainer="DemoDWGMRM2017Entities21">
+    <FunctionImportMapping FunctionImportName="GetReportVenta" FunctionName="DemoDWGMRM2017Model1.Store.GetReportVenta">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DemoDWGMRM2017Model1.GetReportVenta_Result">
+          <ScalarProperty Name="FechaCompleta" ColumnName="FechaCompleta" />
+          <ScalarProperty Name="DiaAnioNumero" ColumnName="DiaAnioNumero" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Ciudad" ColumnName="Ciudad" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>

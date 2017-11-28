@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DemoDWGMRM2017Model3" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="DemoDWGMRM2017EntitiesTEST" annotation:LazyLoadingEnabled="true">
+    <FunctionImport Name="getReportTEST" ReturnType="Collection(DemoDWGMRM2017Model3.getReportTEST_Result)" />
+  </EntityContainer>
+  <ComplexType Name="getReportTEST_Result">
+    <Property Type="String" Name="MesNombreIngles" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="DiaNombreIngles" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="DiaNombreEsp" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="NombreMesEsp" Nullable="true" MaxLength="100" />
+  </ComplexType>
+</Schema>

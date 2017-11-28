@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DemoDWGMRM2017Model2" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="DemoDWGMRM2017Entities2" annotation:LazyLoadingEnabled="true">
+    <FunctionImport Name="GetReportVenta" ReturnType="Collection(DemoDWGMRM2017Model2.GetReportVenta_Result)">
+      <Parameter Name="descrip" Mode="In" Type="String" />
+      <Parameter Name="cliente" Mode="In" Type="String" />
+      <Parameter Name="mes" Mode="In" Type="String" />
+    </FunctionImport>
+  </EntityContainer>
+  <ComplexType Name="GetReportVenta_Result">
+    <Property Type="DateTime" Name="FechaCompleta" Nullable="false" />
+    <Property Type="Decimal" Name="DiaAnioNumero" Nullable="false" Precision="18" Scale="0" />
+    <Property Type="String" Name="Descripcion" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="ClienteNombre" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="ClienteCiudad" Nullable="true" MaxLength="100" />
+  </ComplexType>
+</Schema>

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DemoDWGMRM2017Model3" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="DemoDWGMRM2017EntitiesEx" annotation:LazyLoadingEnabled="true">
+    <FunctionImport Name="GetReportEjemplo" ReturnType="Collection(DemoDWGMRM2017Model3.GetReportEjemplo_Result)">
+      <Parameter Name="fromDate" Mode="In" Type="DateTime" />
+      <Parameter Name="toDate" Mode="In" Type="DateTime" />
+    </FunctionImport>
+  </EntityContainer>
+  <ComplexType Name="GetReportEjemplo_Result">
+    <Property Type="String" Name="FechaCompletaLetras" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="DiaNombreIngles" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="Descripcion" Nullable="true" MaxLength="50" />
+    <Property Type="Decimal" Name="TotalVentaCOP" Nullable="true" Precision="10" Scale="0" />
+  </ComplexType>
+</Schema>

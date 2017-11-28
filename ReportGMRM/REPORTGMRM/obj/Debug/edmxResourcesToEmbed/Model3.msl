@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DemoDWGMRM2017Model2StoreContainer" CdmEntityContainer="DemoDWGMRM2017Entities3">
+    <FunctionImportMapping FunctionImportName="GetReportProducto" FunctionName="DemoDWGMRM2017Model2.Store.GetReportProducto">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DemoDWGMRM2017Model2.GetReportProducto_Result">
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="TotalVentas" ColumnName="TotalVentas" />
+          <ScalarProperty Name="Cantidad" ColumnName="Cantidad" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>
